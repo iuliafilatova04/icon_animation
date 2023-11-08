@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOWNLOAD ICON</title>
+    <style>
+        .download {
+            border: 2px solid #ff6600;
+            padding: 20px;
+            font-family: Arial;
+        }
+        .download .icon {
+        }
+        .download .icon .cloud {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+
+            background-image: radial-gradient(
+                circle, #ff8080 50%, transparent 50%),
+                radial-gradient(
+                    ellipse, #ff8080 50%, transparent 50%),
+                 radial-gradient(
+                    ellipse, #ff8080 50%, transparent 50%
+            );
+
+            background-size:
+                50% 50%,
+                80% 50%,
+                80% 60%;
+            background-repeat: 
+                repeat-x,
+                no-repeat,
+                no-repeat;
+            background-position: 
+                left bottom,
+                center bottom,
+                center 70%;
+        }
+        .download .icon .arrow {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+
+            background-image: 
+              linear-gradient(
+                 90deg,
+                 transparent 30%,
+                 #800000 30%,
+                 #800000 70%,  
+                transparent 70%
+              ),
+              conic-gradient(
+                at center bottom,
+                #800000 0 0.125turn,
+                transparent 0.125turn 0.875turn,
+                #800000 0.875turn 0turn
+              );
+
+            background-size: 
+               100% 50%,
+               100% 50%;
+            background-repeat: no-repeat;
+            background-position: 
+               center top,
+               center bottom;
+            
+               margin-left: -34px;
+        }
+        .download a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #b34700;
+            margin-left: 10px;
+
+            display: inline-block;
+            transform: translateY(-10px);
+        }
+        .download:hover .icon .arrow {
+            animation: up-down 1s 3;
+        }
+        @keyframes up-down {
+            from { transform: translateY(0);}
+            to { transform: translateY(15px);}
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eius ipsam! Mollitia non assumenda nisi quaerat laborum aperiam provident ut eos accusamus? Natus, officia perferendis! Vero quaerat voluptates in necessitatibus minima vel corrupti impedit quos id, suscipit quae voluptate laudantium nulla rem itaque eius! Iste minus fugiat maxime ab architecto magnam et est dolores neque ad quibusdam aperiam sapiente expedita accusamus consequatur dolor dignissimos delectus officia assumenda nostrum nobis, reiciendis ratione veniam unde. Facere impedit nam repudiandae eius, laborum sit ipsum atque accusantium modi rerum id error fuga sunt vel earum libero at corporis. Culpa quas aut suscipit non perspiciatis.
+    </p>
+
+    <div class="download">
+
+        <span class="icon">
+            <span class="cloud"></span>
+            <span class="arrow"></span>
+        </span>
+
+        <a href="manuals/html_tutorial.pdf" download>
+             download HTML manual 
+        </a>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, eius ipsam! Mollitia non assumenda nisi quaerat laborum aperiam provident ut eos accusamus? Natus, officia perferendis! Vero quaerat voluptates in necessitatibus minima vel corrupti impedit quos id, suscipit quae voluptate laudantium nulla rem itaque eius! Iste minus fugiat maxime ab architecto magnam et est dolores neque ad quibusdam aperiam sapiente expedita accusamus consequatur dolor dignissimos delectus officia assumenda nostrum nobis, reiciendis ratione veniam unde. Facere impedit nam repudiandae eius, laborum sit ipsum atque accusantium modi rerum id error fuga sunt vel earum libero at corporis. Culpa quas aut suscipit non perspiciatis.
+    </p>
+</body>
+</html>
